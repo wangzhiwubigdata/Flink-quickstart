@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="flink" />
+        <module name="flink-project" />
+        <module name="flink-training-exercises" />
+        <module name="my-flink-project" />
+        <module name="quickstart" />
+        <module name="streaming-state-demo" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CommDeviceMonitorServer" target="1.8" />
+      <module name="flink" target="1.7" />
+      <module name="flink-project" target="1.8" />
+      <module name="flink-training-exercises" target="1.8" />
+      <module name="help-server" target="1.7" />
+      <module name="karma" target="1.5" />
+      <module name="my-flink-project" target="1.8" />
+      <module name="quickstart" target="1.8" />
+      <module name="streaming-state-demo" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

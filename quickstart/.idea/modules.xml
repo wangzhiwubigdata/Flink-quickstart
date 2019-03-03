@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../flink projects/flink-demos/timeout-monitoring/flink.iml" filepath="$PROJECT_DIR$/../flink projects/flink-demos/timeout-monitoring/flink.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/flink-project/flink-project.iml" filepath="$USER_HOME$/Downloads/flink-project/flink-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flink projects/flink-training-exercises/flink-training-exercises.iml" filepath="$PROJECT_DIR$/../flink projects/flink-training-exercises/flink-training-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../my-flink-project/my-flink-project.iml" filepath="$PROJECT_DIR$/../my-flink-project/my-flink-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quickstart.iml" filepath="$PROJECT_DIR$/quickstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flink projects/flink-demos/streaming-state-machine/streaming-state-demo.iml" filepath="$PROJECT_DIR$/../flink projects/flink-demos/streaming-state-machine/streaming-state-demo.iml" />
+    </modules>
+  </component>
+</project>

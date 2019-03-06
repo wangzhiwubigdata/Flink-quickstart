@@ -17,45 +17,23 @@ public class WordCountSQL {
 
     public static void main(String[] args) throws Exception{
 
-
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
         BatchTableEnvironment tEnv = TableEnvironment.getTableEnvironment(env);
 
-
         List list  =  new ArrayList();
-
-        String wordsStr = "Hello Flink Hello 51CTO";
-
+        String wordsStr = "Hello Flink Hello TOM";
         String[] words = wordsStr.split("\\W+");
-
         for(String word : words){
-
             WC wc = new WC(word, 1);
             list.add(wc);
         }
         DataSet<WC> input = env.fromCollection(list);
-
         tEnv.registerDataSet("WordCount", input, "word, frequency");
-
         Table table = tEnv.sqlQuery(
                 "SELECT word, SUM(frequency) as frequency FROM WordCount GROUP BY word");
-
         DataSet<WC> result = tEnv.toDataSet(table, WC.class);
-
         result.print();
-
-
     }//main
-
-
-
-
-
-
-
-
-
-
 
     public static class WC {
         public String word;//hello

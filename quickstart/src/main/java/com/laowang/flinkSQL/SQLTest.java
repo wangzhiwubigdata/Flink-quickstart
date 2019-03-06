@@ -106,9 +106,5 @@ public class SQLTest {
 
 		public Result() {}
 	}
-
-
-
-
 	}//
 

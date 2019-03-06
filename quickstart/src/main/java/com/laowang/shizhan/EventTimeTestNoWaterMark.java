@@ -10,7 +10,7 @@ import org.apache.flink.streaming.api.windowing.assigners.SlidingEventTimeWindow
 import org.apache.flink.streaming.api.windowing.time.Time;
 
 /**
- * Created by wangchangye on 2019/1/13.
+ * Created by  on 2019/1/13.
  */
 public class EventTimeTestNoWaterMark {
 

@@ -35,10 +35,6 @@ public class TopN {
 		 *
 		 *
 		 */
-
-
-
-
 		//每隔5秒钟 计算过去1小时 的 Top 3 商品
 		StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
@@ -48,9 +44,7 @@ public class TopN {
 
 
 		Properties properties = new Properties();
-		properties.setProperty("bootstrap.servers", "localhost:9092");
-
-
+		properties.setProperty("bootstrap.servers", "127.0.0.1:9092");
 		FlinkKafkaConsumer<String> input = new FlinkKafkaConsumer<>("topn", new SimpleStringSchema(), properties);
 
 		//从最早开始消费 位点
@@ -127,9 +121,6 @@ public class TopN {
 						public int compare(Integer y, Integer x) {
 							return (x < y) ? -1 : 1;
 						}
-
-
-
 
 					}); //treemap按照key降序排列，相同count值不覆盖
 
